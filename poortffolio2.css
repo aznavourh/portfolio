@@ -1,0 +1,103 @@
+body {
+    background: #c9af96;
+    margin: 4rem;
+    overflow: hidden;
+    font-family: 'Questrial', sans-serif;
+}
+
+
+h1 {
+    color: #33210f;
+}
+
+i {
+    color: #33210f;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+table {
+    border-collapse: separate;
+    border-spacing: 70px;
+}
+
+td,
+th {
+    padding: 70px;
+    text-align: left;
+}
+
+.card__giratorio {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+}
+
+.card__giratorio-conteudo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card__giratorio:hover .card__giratorio-conteudo {
+    transform: rotateY(180deg);
+}
+
+.card__giratorio-conteudo--frente,
+.card__giratorio-conteudo--traseira {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card__giratorio-conteudo--frente {
+    background: linear-gradient(-229deg, #dbc3aa, #33210f);
+}
+
+.card__giratorio-conteudo--traseira {
+    background: #dbc3aa;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.card__giratorio-conteudo--traseira h1,
+.card__giratorio-conteudo--traseira p {
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card__giratorio-conteudo--traseira h1 {
+    font-size: 1.7rem;
+}
+
+.logo {
+    width: 190px;
+    filter: drop-shadow(2px 2px 5px black);
+    opacity: .7;
+    border-radius: 5%;
+}
+
+.sinailaquoi {
+    margin-top: -50px;
+    margin-left: 120px;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

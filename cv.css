@@ -1,0 +1,16 @@
+body {
+    background-color: #c9af96;
+    font-family: 'Questrial', sans-serif;
+    margin: 4rem;
+}
+
+i {
+    color: #33210f;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    margin-top: 20px;
+}
